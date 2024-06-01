@@ -1,14 +1,5 @@
 <?php
-// Establish database connection
-$servername = "localhost";
-$username = "root"; // Your MySQL username
-$password = ""; // Your MySQL password
-$dbname = "scm"; // Your MySQL database name
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require '../config.php';
 
 // Fetch recently added suppliers from the database
 $sql = "SELECT * FROM Suppliers ORDER BY SupplierID DESC LIMIT 5"; // Change the limit according to your requirement

@@ -207,6 +207,16 @@ b{
    border-radius: var(--border-radius-1);
  }
 
+ .dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
  /* ----------------------------
  --------- Main--------------
  ------------------------------ */
@@ -444,6 +454,76 @@ main .recent_order {
   .content-wrapper {
      display: flex;
   }
+
+  /* Suppliers*/
+
+
+form {
+  position: absolute;
+  top: 19%;
+  left: 35%;
+  width: 60%;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+}
+
+label {
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 2px 0 2px 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 
 /*********************
 Right Side

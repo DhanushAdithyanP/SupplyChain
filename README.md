@@ -62,7 +62,7 @@ $dbname = "scm"; // The name of the database you created
 # Step 6: Run the Project
 Access the project in the browser:
 Open a web browser and go to http://localhost/SupplyChain. 
-In case you have changed the folder name, replace your-project-folder with the name of the folder you copied into htdocs.
+In case you have changed the folder name, replace SupplyChain with the name of the folder you copied into htdocs.
 
 # Troubleshooting
 1. Port issues: If Apache or MySQL don't start, they might be conflicting with other services. Change the default ports in the XAMPP control panel if necessary.
